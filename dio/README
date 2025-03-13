@@ -18,9 +18,8 @@ Note: The DIO protocol will reset to the default setting after a cold boot.
 
 
 2. DIO Output sample code
-   # i2cset -f -y 7 0x24 0x01 0xFF	//Set DIO1 ~ 8 as High
-   # i2cset -f -y 7 0x24 0x01 0xF0	//Set DIO1 ~ 4 as Low and DIO5~8 as High
-   # i2cset -f -y 7 0x24 0x01 0x01	//Set DIO1 as High and DIO2~8 as Low
+   # i2cset -f -y 7 0x24 0x01 0xF0	//Set DIO5 ~ 8 as High
+   # i2cset -f -y 7 0x24 0x01 0x40	//Set DIO7 as High and DIO8,DIO6,DIO5 as Low
    ...
 
 3. DIO input sample code
