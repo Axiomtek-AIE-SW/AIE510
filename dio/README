@@ -9,7 +9,7 @@ Note: The DIO protocol will reset to the default setting after a cold boot.
    [Example]:
 	<i2c_num>: 7
 	<device_adrr>: 0x24
-	<reg_addr>: 0x00~0x03 (as below picture)
+	<reg_addr>: 0x00~0x01
 	<value>:
 		- Bit0 -> DIO1, Low: 0 High: 1
 		- Bit1 -> DIO2, Low: 0 High: 1
@@ -19,12 +19,9 @@ Note: The DIO protocol will reset to the default setting after a cold boot.
 
 2. DIO Output sample code
    # i2cset -f -y 7 0x24 0x01 0xFF	//Set DIO1 ~ 8 as High
-   # i2cset -f -y 7 0x24 0x03 0x00	//Set DIO1 ~ 8 as Output
    # i2cset -f -y 7 0x24 0x01 0xF0	//Set DIO1 ~ 4 as Low and DIO5~8 as High
    # i2cset -f -y 7 0x24 0x01 0x01	//Set DIO1 as High and DIO2~8 as Low
-   # i2cset -f -y 7 0x24 0x03 0x0F	//Set DIO1 ~ 4 as Input and DIO5~8 as Output
    ...
 
 3. DIO input sample code
-   # i2cset -f -y 7 0x24 0x03 0xFF	//Set DIO1 ~ 8 as Input
    # i2cget -f -y 7 0x24 0x00		//Read all inputs
