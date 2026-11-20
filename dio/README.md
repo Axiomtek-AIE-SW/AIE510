@@ -65,7 +65,7 @@ GPIO changes take effect immediately. Run `save` to persist them. On the next mo
 sudo dioctl.sh gui
 ```
 
-![DIO Settings mockup with two bank tabs, eight channel rows, inline dropdowns, and left-aligned Save, Clear, and Close buttons](./dioctl-gui.svg)
+![DIO Settings mockup with two bank tabs, eight channel rows, inline dropdowns, and left-aligned Save, Clear, and Close buttons](./dioctl-gui.png)
 
 The illustration is a mockup. Colors and control styling vary with the desktop theme.
 
