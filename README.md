@@ -1,6 +1,6 @@
-# Introduction
+# Utility Documentation
 
-This is sample code for Axiomtek AIE510
+This repository contains documentation, usage guides, and troubleshooting notes for various utilities and helper tools.
 
 # Image Flash
 
@@ -19,7 +19,7 @@ This is sample code for Axiomtek AIE510
 
     #### \[Command example\]:
     > ```
-    > $ md5sum -c mfi_jetson-orin-nx-16GB-JP5.1.2-AIE510-STD-V1.0.0.tbz2.md5sum
+    > $ md5sum -c JetPack_7.2.1_Linux_JETSON_ORIN_NX_TARGETS.tbz2.md5sum
     > ```
 
 - **Step 3. If above command returns OK, Untar the image file with the command below:**
@@ -30,7 +30,7 @@ This is sample code for Axiomtek AIE510
 
     #### \[Command example\]:
     > ```
-    > $ tar jxvf mfi_jetson-orin-nx-16GB-JP5.1.2-AIE510-STD-V1.0.0.tbz2
+    > $ sudo tar jxvf JetPack_7.2.1_Linux_JETSON_ORIN_NX_TARGETS.tbz2
     > ```
 
 - **Step 4. Change the directory to the image package folder with the command below:**
@@ -41,7 +41,7 @@ This is sample code for Axiomtek AIE510
 
     #### \[Command example\]:
     > ```
-    > $ cd mfi_jetson-orin-nx-16GB-JP5.1.2-AIE510-STD-V1.0.0
+    > $ cd JetPack_7.2.1_Linux_JETSON_ORIN_NX_TARGETS/Linux_for_Tegra/
     > ```
 
 - **Step 5. Make sure the recovery switch(SW5) has been switched to ON, and run the command lsusb, then the command line "0955:7323 NVidia Corp." should be listed.**
@@ -56,8 +56,6 @@ This is sample code for Axiomtek AIE510
 - **Step 6. Running the following command to flash the image.**
 
     > ```
-    > $ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 5 --showlogs
-	> Or
 	> $ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only
     > ```
 
