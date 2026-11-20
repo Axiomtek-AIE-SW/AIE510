@@ -57,6 +57,8 @@ This is sample code for Axiomtek AIE510
 
     > ```
     > $ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 5 --showlogs
+	> Or
+	> $ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only
     > ```
 
 - **Step 7. The flashing procedure takes approximately 8 minutes or more. Once finished, and AIE510-ONX will automatically reboot, and please switch the recovery switch(SW5) to OFF to return to standard mode..**
